@@ -4,10 +4,13 @@ The program will use the integrated command datetime to grab the hour, minutes a
 It will then isolate the current hour, and do a number check to see what part of the day it is. 
 I have implemented the pyttsx3 library to enable cross-platform TTS usage for the visually impaired. 
 
+The advantage of pyttsx3 is that it natively supports Windows, macOS and Linux. It also works completely offline.
+
+
 **Work In Progress:**
 - Multi language TTS and text support
 
 **To do:**
-- Basic GUI
+- Basic GUI for settings such as language and voice notification
 - Voice notification when a new hour comes
-- Animal Crossing synched music? Just a fun idea!
+- Animal Crossing music? Just a fun idea!

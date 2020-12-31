@@ -35,5 +35,5 @@ helloNO = "Dette er i norsk!."
 helloIT = "Questo testo è scritto in Italiano."
 helloEN = "This text is written in English."
 
-helloSTR = hello+lanVal
+helloSTR = 'hello'+lanVal
 print(helloSTR)

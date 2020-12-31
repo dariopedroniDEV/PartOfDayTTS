@@ -1,5 +1,5 @@
 
-
+# Language selection loop. If incorrect value is entered then it will ask again for language.
 def lanInput():
     lanInt = int(input("Language/Lingua/Språk: \n 1.English \n 2.Italiano \n 3.Norsk \n"))
     while lanCheck == 0:

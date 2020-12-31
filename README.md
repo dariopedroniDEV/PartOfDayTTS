@@ -8,7 +8,7 @@ The advantage of pyttsx3 is that it natively supports Windows, macOS and Linux. 
 
 
 **Work In Progress:**
-- Multi language TTS and text support
+- Multi language TTS and text support (Currently researching how to implement GetText)
 
 **To do:**
 - Basic GUI for settings such as language and voice notification

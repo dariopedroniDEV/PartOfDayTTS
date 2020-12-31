@@ -1,39 +1,39 @@
+# Initializing variables
+lanCheck = 0
+
 
 # Language selection loop. If incorrect value is entered then it will ask again for language.
 def lanInput():
-    lanInt = int(input("Language/Lingua/Språk: \n 1.English \n 2.Italiano \n 3.Norsk \n"))
+    global lanVal
     while lanCheck == 0:
-
+        lanInt = int(input("Language/Lingua/Språk: \n 1.English \n 2.Italiano \n 3.Norsk \n"))
         if lanInt == 1:
-            lanVal = 'en'
+            lanVal = 'EN'
             print("English selected.")
             lanCheck == 1
+            break
 
-        if lanInt == 2:
-            lanVal = 'it'
+        elif lanInt == 2:
+            lanVal = 'IT'
             print("Lingua Italiana selezionata.")
             lanCheck == 1
+            break
 
 
-        if lanInt == 3:
-            lanVal = 'no'
+        elif lanInt == 3:
+            lanVal = 'NO'
             print("Norsk valgt.")
             lanCheck == 1
+            break
 
         else:
             print('Invalid number!')
-
-
-
-
+# Now all strings will end with the proper lanVal
 lanInput()
-print("lanInput exited properly.")
 
+helloNO = "Dette er i norsk!."
+helloIT = "Questo testo è scritto in Italiano."
+helloEN = "This text is written in English."
 
-# Trying to figure out how to use GetText...
-# Maybe NullTranslations can be useful?
-# Screw this, I`ll do it my own way
-# Totally off topic, but in Python 2.7 you could execute some pretty dangerous commands through the input function, if running through Sudo. For example you could remove OS files.
-
-
-
+helloSTR = hello+lanVal
+print(helloSTR)

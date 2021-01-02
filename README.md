@@ -8,10 +8,13 @@ The advantage of pyttsx3 is that it natively supports Windows, macOS and Linux. 
 
 
 **Work In Progress:**
-- Multi language TTS and text support (For loop completed for language selection. Moving on to string localization)
+- Multi language TTS and text support (For loop completed for language selection. Moving on to string localization) + Ty Mazter for your help!
+
 
 **To do:**
 - Basic GUI for settings such as language and voice notification
 - Voice notification when a new hour comes (Maybe even each half hour or quarter?)
 - Animal Crossing music? Just a fun idea!
 - Hotkey menu while running from Python Console. 
+
+

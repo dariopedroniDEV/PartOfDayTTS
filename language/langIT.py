@@ -18,3 +18,7 @@ for voice in voices:
 
 
 
+# All the code
+def languageIT():
+   welcome = "Ciao! Questo programma controllerà il tempo del computer."
+   strCurrentTime = "Tempo attuale =", current_time

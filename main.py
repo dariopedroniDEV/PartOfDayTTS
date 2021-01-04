@@ -17,7 +17,7 @@ langMenu.lanInput()
 
 
 
-# A simple program that checks the computer clock time, and tells you if it's morning, afternoon, evening or night.
+# Welcome message
 welcomePrint = None
 def welcomeMessage():
     global welcomePrint
@@ -31,9 +31,7 @@ def welcomeMessage():
 welcomeMessage()
 print(welcomePrint)
 
-
-
-
+# datetime grab
 now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
 
@@ -70,6 +68,7 @@ print("The value of hour_int is: ",hour_int)
 
 def momentEN():
     moment = None
+
     if hour_int >= 5 and hour_int <= 12:
         moment = "morning"
     if hour_int >= 11 and hour_int <= 12:
@@ -79,6 +78,7 @@ def momentEN():
     if hour_int >= 23 and hour_int <= 6:
         moment = "night"
     theTime = 'The current time is ' + current_time + '. and it is ' + moment
+    print(theTime)
     engine.say(theTime)
     engine.runAndWait()
 
@@ -92,12 +92,14 @@ def momentIT():
         moment = "sera"
     if hour_int >= 23 and hour_int <= 6:
         moment = "notte"
-    theTime = 'Ora sono le ' + current_time + ', ed è' + moment
+    theTime = 'Ora sono le ' + current_time + ', ed è ' + moment
     engine.say(theTime)
+    print(theTime)
     engine.runAndWait()
 
 def momentNO():
     moment = None
+    global theTime
     if hour_int >= 5 and hour_int <= 12:
         moment = "morgen"
     if hour_int >= 11 and hour_int <= 12:
@@ -107,13 +109,24 @@ def momentNO():
     if hour_int >= 23 and hour_int <= 6:
         moment = "natt"
     theTime = 'Den nåværende tiden er ' + current_time + ', og nå er det ' + moment
+    print(theTime)
     engine.say(theTime)
     engine.runAndWait()
 
 
 
-# Final program part - Showing
+
+# Final program part - Showing (TTS Working on macOS only for now. TTS Synthetizer has to be configured for italian and Norwegian too.)
+
+def finalPartSPeech():
+    if langMenu.lanVal == 'EN':
+        momentEN()
+    if langMenu.lanVal == 'IT':
+        momentIT()
+    if langMenu.lanVal == 'NO':
+        momentNO()
+
+finalPartSPeech()
 
 # Letting the sound engine say the previous ¢string.
-engine.say(theTime)
-engine.runAndWait()
+

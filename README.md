@@ -5,7 +5,7 @@ It will then isolate the current hour, and do a number check to see what part of
 I have implemented the pyttsx3 library to enable cross-platform TTS usage for the visually impaired. 
 
 The advantage of pyttsx3 is that it natively supports Windows, macOS and Linux. It also works completely offline.
-
+Note: As of right now, the code and file structure is messy. It is not ready for use.
 
 **Work In Progress:**
 - Multi language TTS and text support (For loop completed for language selection. Moving on to string localization) + Ty Mazter for your help!

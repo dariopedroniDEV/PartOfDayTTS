@@ -6,6 +6,12 @@ from datetime import datetime
 import langMenu
 import pyttsx3
 
+# datetime grab
+now = datetime.now()
+current_time = now.strftime("%H:%M:%S")
+
+
+
 # init function to get an engine instance for the speech synthesis
 engine = pyttsx3.init()
 engine.setProperty('rate', 150)
@@ -31,9 +37,7 @@ def welcomeMessage():
 welcomeMessage()
 print(welcomePrint)
 
-# datetime grab
-now = datetime.now()
-current_time = now.strftime("%H:%M:%S")
+
 
 # Grabbing current hour, minutes and seconds
 def currentTime():
@@ -93,6 +97,9 @@ def momentIT():
     if hour_int >= 23 and hour_int <= 6:
         moment = "notte"
     theTime = 'Ora sono le ' + current_time + ', ed è ' + moment
+    voices = engine.getProperty('voices')
+    engine.setProperty('voice', voices[1].id)
+    engine.say(welcomePrint)
     engine.say(theTime)
     print(theTime)
     engine.runAndWait()

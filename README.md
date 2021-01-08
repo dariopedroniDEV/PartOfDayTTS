@@ -8,7 +8,7 @@ The advantage of pyttsx3 is that it natively supports Windows, macOS and Linux. 
 Note: As of right now, the code and file structure is messy. It is not ready for use.
 
 **Libraries in use - install these with PIP through Terminal**
-- Testing out Pyglet for sound engine and Windows GUI (Yep, I am not using Pyglet for audio playback)
+- Testing out Pyglet for sound engine and Windows GUI
 - pyttsdx3 (TTS)
 - eyeD3 (Reading metadata from mp3)
 

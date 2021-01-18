@@ -1,4 +1,5 @@
 **PartOfDayTTS is an exercise program I am developing to improve my Python coding.** 
+**NOTE: The project is temporarly suspended. I have realized that I first need to build a solid base of Python knowledge before continuing my work on this.**
 
 The program will use the integrated command datetime to grab the hour, minutes and seconds. 
 It will then isolate the current hour, and do a number check to see what part of the day it is. 
